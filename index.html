@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Discover delicious food, warm hospitality and a memorable dining experience at Mahajan Restaurant.">
+<title>Mahajan Restaurant | Good Food, Great Vibes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#171714;--gold:#edc76b;--gold2:#f7dc91;--cream:#faf7f0;--muted:#69675f;--line:#e5ded0}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--cream)}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(1180px,92%);margin:auto}
+header{height:82px;background:#11110f;color:white;position:sticky;top:0;z-index:20;border-bottom:1px solid #37332a}.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;color:var(--gold);font-family:'Playfair Display',serif;font-size:24px;font-weight:700;letter-spacing:2px;line-height:1}.brand small{display:block;font-family:'DM Sans',sans-serif;font-size:10px;letter-spacing:5px;text-align:center;margin-top:6px}.brand-mark{font-size:35px}.navlinks{display:flex;align-items:center;gap:28px;font-size:13px}.navlinks a{transition:color .2s}.navlinks a:hover{color:var(--gold)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:9px;padding:14px 22px;background:var(--gold);color:#19160e;font-weight:700;cursor:pointer;transition:transform .2s,background .2s}.btn:hover{background:var(--gold2);transform:translateY(-2px)}.menu-toggle{display:none;background:transparent;color:white;border:1px solid #555;padding:8px 12px;border-radius:6px}
+.hero{position:relative;min-height:560px;display:flex;align-items:center;color:white;overflow:hidden;background:#21190f url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2000&q=85') center/cover}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,9,7,.88) 0%,rgba(10,9,7,.67) 45%,rgba(10,9,7,.12) 100%)}.hero-content{position:relative;z-index:1;max-width:650px;padding:80px 0}.eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);font-weight:700}.hero h1{font-family:'Playfair Display',serif;font-size:clamp(42px,6vw,76px);line-height:1.06;margin:18px 0}.hero h1 span{color:var(--gold)}.hero p{font-size:17px;line-height:1.8;max-width:550px;color:#f0ece5;margin:0 0 28px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap}.btn-outline{background:transparent;color:white;border:1px solid #d9c99f}.btn-outline:hover{color:#171714}
+.features{background:#fffdf8;padding:34px 0;border-bottom:1px solid #eee7da}.feature-grid{display:grid;grid-template-columns:repeat(4,1fr)}.feature{text-align:center;padding:8px 20px;border-right:1px solid var(--line)}.feature:last-child{border:0}.feature .ico{font-size:28px;color:#c99534}.feature h3{font-family:'Playfair Display',serif;margin:9px 0 6px;font-size:18px}.feature p{font-size:13px;line-height:1.6;color:var(--muted);margin:0}
+section{padding:82px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 36px}.section-head .eyebrow{color:#9b7130}.section-head h2{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,46px);margin:9px 0}.section-head p{color:var(--muted);line-height:1.7;margin:0}
+.menu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.dish{background:white;border:1px solid #eee7dc;border-radius:9px;overflow:hidden;box-shadow:0 8px 25px #34250b08;transition:transform .25s}.dish:hover{transform:translateY(-5px)}.dish img{width:100%;height:190px;object-fit:cover;display:block}.dish-info{padding:16px}.dish-info h3{font-family:'Playfair Display',serif;margin:0 0 7px;font-size:19px}.dish-info p{margin:0;color:var(--muted);font-size:13px;line-height:1.6}.dish-foot{display:flex;justify-content:space-between;align-items:center;margin-top:14px;color:#986b1f;font-weight:700}.tag{font-size:10px;letter-spacing:1px;text-transform:uppercase;background:#f8f0dc;padding:5px 8px;border-radius:20px}
+.about{background:#171714;color:white}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.about-photo{position:relative}.about-photo img{width:100%;height:450px;object-fit:cover;border-radius:12px}.about-photo:after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--gold);border-radius:12px;z-index:0;pointer-events:none}.about-photo img{position:relative;z-index:1}.about-copy h2{font:600 clamp(34px,4vw,48px)/1.15 'Playfair Display',serif;margin:12px 0 20px}.about-copy p{color:#c9c5bb;line-height:1.85}.about-points{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:26px 0}.about-point{border-left:2px solid var(--gold);padding-left:12px}.about-point strong{display:block;color:var(--gold);font-family:'Playfair Display',serif;font-size:19px}.about-point span{font-size:12px;color:#c9c5bb}
+.gallery-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;grid-template-rows:200px 200px;gap:14px}.gallery-grid img{width:100%;height:100%;object-fit:cover;border-radius:9px}.gallery-grid img:first-child{grid-row:span 2}
+.booking{background:linear-gradient(120deg,#241b10dd,#161512ee),url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=80') center/cover;color:white}.booking-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}.booking h2{font:600 44px/1.15 'Playfair Display',serif;margin:12px 0}.booking p{color:#ddd5c6;line-height:1.8}.booking-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;background:#fffdf8;color:var(--ink);padding:28px;border-radius:12px}.booking-form input,.booking-form select,.booking-form textarea{width:100%;border:1px solid #e3dccf;border-radius:7px;padding:13px;background:white;outline-color:#c99534}.booking-form textarea{grid-column:span 2;min-height:85px;resize:vertical}.booking-form .full{grid-column:span 2}.booking-form label{display:block;font-size:12px;font-weight:700;margin-bottom:6px}.field{min-width:0}.notice{grid-column:span 2;font-size:12px;color:#6b674f;line-height:1.5}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.contact-card{background:white;border:1px solid var(--line);padding:25px;border-radius:10px}.contact-card .ico{font-size:24px;color:#b9852e}.contact-card h3{font:600 21px 'Playfair Display',serif;margin:12px 0 7px}.contact-card p{color:var(--muted);font-size:14px;line-height:1.7;margin:0}
+footer{background:#11110f;color:#bdb8ac;padding:30px 0}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-row strong{font-family:'Playfair Display',serif;color:var(--gold);letter-spacing:1px}.footer-row p{font-size:12px;margin:5px 0}.top-link{color:var(--gold);font-size:13px}
+.toast{display:none;position:fixed;right:20px;bottom:20px;max-width:350px;background:#171714;color:white;padding:16px 20px;border-left:4px solid var(--gold);border-radius:8px;box-shadow:0 10px 30px #0003;z-index:50}.toast.show{display:block}
+@media(max-width:900px){.navlinks{gap:15px}.menu-grid{grid-template-columns:repeat(2,1fr)}.about-grid,.booking-grid{gap:32px}.hero{min-height:520px}}
+@media(max-width:680px){header{height:72px}.brand{font-size:20px}.brand-mark{font-size:29px}.menu-toggle{display:block}.navlinks{display:none;position:absolute;top:71px;left:0;right:0;background:#11110f;padding:18px 5%;flex-direction:column;align-items:flex-start;border-top:1px solid #39352d}.navlinks.open{display:flex}.nav>.btn{display:none}.hero{min-height:560px;background-position:58% center}.hero:before{background:linear-gradient(90deg,rgba(10,9,7,.88),rgba(10,9,7,.48))}.hero-content{padding:70px 0}.hero p{font-size:15px}.feature-grid{grid-template-columns:1fr 1fr;row-gap:24px}.feature:nth-child(2){border-right:0}.feature:nth-child(3),.feature:nth-child(4){padding-top:20px;border-top:1px solid var(--line)}section{padding:60px 0}.menu-grid{gap:12px}.dish img{height:145px}.dish-info{padding:12px}.dish-info h3{font-size:17px}.about-grid,.booking-grid{grid-template-columns:1fr}.about-photo{margin:0 12px 15px 0}.about-photo img{height:320px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:160px 160px 160px}.gallery-grid img:first-child{grid-row:span 2}.gallery-grid img:last-child{grid-column:span 2}.booking h2{font-size:36px}.booking-form{padding:18px;gap:11px}.contact-grid{grid-template-columns:1fr}.footer-row{align-items:flex-start;flex-direction:column}}
+@media(max-width:390px){.menu-grid{grid-template-columns:1fr}.dish img{height:200px}.booking-form{grid-template-columns:1fr}.booking-form textarea,.booking-form .full,.notice{grid-column:span 1}.hero h1{font-size:40px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Mahajan Restaurant home"><span class="brand-mark">♨</span><span>MAHAJAN<small>RESTAURANT</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="navlinks" id="navLinks">
+      <a href="#home">Home</a><a href="#about">About Us</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#booking">Reservations</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="#booking">♧ &nbsp; Book a Table</a>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="wrap"><div class="hero-content">
+    <div class="eyebrow">Good food · Great vibes · Together</div>
+    <h1>Welcome to<br><span>Mahajan Restaurant</span></h1>
+    <p>Where every meal is a celebration of flavour. Enjoy delicious food, warm hospitality and a memorable dining experience.</p>
+    <div class="hero-actions"><a class="btn" href="#menu">Explore Our Menu &nbsp; →</a><a class="btn btn-outline" href="#about">Discover Our Story</a></div>
+  </div></div>
+</section>
+<div class="features"><div class="wrap feature-grid">
+  <div class="feature"><div class="ico">♨</div><h3>Delicious Food</h3><p>Fresh ingredients, bold flavours and satisfying favourites.</p></div>
+  <div class="feature"><div class="ico">♧</div><h3>Family Friendly</h3><p>A welcoming place for family, friends and celebrations.</p></div>
+  <div class="feature"><div class="ico">❧</div><h3>Made with Care</h3><p>Thoughtfully prepared dishes served with warmth.</p></div>
+  <div class="feature"><div class="ico">☆</div><h3>Great Ambience</h3><p>A relaxed atmosphere for a delightful dining experience.</p></div>
+</div></div>
+<section id="menu"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">A taste to remember</div><h2>Our Signature Menu</h2><p>From comforting classics to crowd favourites, find something delicious for every craving.</p></div>
+  <div class="menu-grid">
+    <article class="dish"><img loading="lazy" src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=700&q=80" alt="Rich Indian curry"><div class="dish-info"><h3>North Indian</h3><p>Comforting curries, fresh breads and classic flavours.</p><div class="dish-foot"><span class="tag">Guest favourite</span><span>↗</span></div></div></article>
+    <article class="dish"><img loading="lazy" src="https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=700&q=80" alt="Aromatic biryani rice"><div class="dish-info"><h3>Special Biryani</h3><p>Fragrant rice layered with spices and flavour.</p><div class="dish-foot"><span class="tag">Must try</span><span>↗</span></div></div></article>
+    <article class="dish"><img loading="lazy" src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=700&q=80" alt="Tandoori grilled food"><div class="dish-info"><h3>Tandoor Special</h3><p>Smoky, sizzling bites with a delicious char.</p><div class="dish-foot"><span class="tag">Chef's pick</span><span>↗</span></div></div></article>
+    <article class="dish"><img loading="lazy" src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=700&q=80" alt="Colourful noodles"><div class="dish-info"><h3>Chinese Favourites</h3><p>Wok-tossed favourites full of flavour and crunch.</p><div class="dish-foot"><span class="tag">Popular</span><span>↗</span></div></div></article>
+  </div>
+  <p style="text-align:center;color:var(--muted);font-size:12px;margin-top:22px">Menu items and prices can be updated with your actual restaurant menu.</p>
+</div></section>
+<section class="about" id="about"><div class="wrap about-grid">
+  <div class="about-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=85" alt="Warm restaurant dining ambience"></div>
+  <div class="about-copy"><div class="eyebrow">Our story</div><h2>Good food brings people together.</h2><p>At Mahajan Restaurant, every meal is an opportunity to connect, celebrate and make memories. We believe great dining begins with flavour, thoughtful service and a welcoming atmosphere.</p><p>Whether it’s a casual lunch, a family dinner or a special occasion, we look forward to welcoming you to our table.</p><div class="about-points"><div class="about-point"><strong>Fresh</strong><span>Ingredients chosen with care</span></div><div class="about-point"><strong>Warm</strong><span>Hospitality in every visit</span></div></div><a class="btn" href="#booking">Plan Your Visit &nbsp; →</a></div>
+</div></section>
+<section id="gallery"><div class="wrap"><div class="section-head"><div class="eyebrow">A little look around</div><h2>Our Gallery</h2><p>Good food, inviting spaces and moments worth sharing.</p></div>
+<div class="gallery-grid">
+<img loading="lazy" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Restaurant interior">
+<img loading="lazy" src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=80" alt="Freshly grilled food">
+<img loading="lazy" src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=700&q=80" alt="Fresh colourful meal">
+<img loading="lazy" src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=700&q=80" alt="Restaurant table setting">
+<img loading="lazy" src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80" alt="Delicious prepared dish">
+</div></div></section>
+<section class="booking" id="booking"><div class="wrap booking-grid">
+  <div><div class="eyebrow">Your table is waiting</div><h2>Make it a meal to remember.</h2><p>Planning a family dinner or a get-together? Send us your preferred details and our team can confirm your reservation.</p><p>✦ &nbsp; Good food &nbsp; ✦ &nbsp; Warm hospitality &nbsp; ✦</p></div>
+  <form class="booking-form" id="bookingForm">
+    <div class="field"><label for="guestName">Your name *</label><input id="guestName" name="name" required placeholder="Enter your name"></div>
+    <div class="field"><label for="guestPhone">Phone number *</label><input id="guestPhone" name="phone" type="tel" required placeholder="Your contact number"></div>
+    <div class="field"><label for="bookingDate">Preferred date *</label><input id="bookingDate" name="date" type="date" required></div>
+    <div class="field"><label for="bookingTime">Preferred time</label><select id="bookingTime" name="time"><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option></select></div>
+    <div class="field"><label for="guests">Number of guests</label><select id="guests" name="guests"><option>1–2 guests</option><option>3–4 guests</option><option>5–6 guests</option><option>7+ guests</option></select></div>
+    <div class="field"><label for="occasion">Occasion</label><select id="occasion" name="occasion"><option>Casual dining</option><option>Family gathering</option><option>Birthday</option><option>Anniversary</option><option>Other</option></select></div>
+    <textarea name="message" placeholder="Any special requests? (optional)"></textarea>
+    <button class="btn full" type="submit">Request a Reservation &nbsp; →</button>
+    <div class="notice">Demo form: connect your WhatsApp, email or booking system before publishing to receive real reservations.</div>
+  </form>
+</div></section>
+<section id="contact"><div class="wrap"><div class="section-head"><div class="eyebrow">Come say hello</div><h2>Visit Mahajan Restaurant</h2><p>We’d love to host you. Add your real address and contact details before publishing.</p></div>
+<div class="contact-grid">
+<div class="contact-card"><div class="ico">⌖</div><h3>Find Us</h3><p>Shanichara Bazar,<br>Sant Kabir Nagar, Uttar Pradesh</p></div>
+<div class="contact-card"><div class="ico">☎</div><h3>Call Us</h3><p>WhatsApp booking available after setup.<br>Add your restaurant number to activate.</p></div>
+<div class="contact-card"><div class="ico">◷</div><h3>Opening Hours</h3><p>Monday – Sunday<br>Add your actual opening and closing hours.</p></div>
+</div></div></section>
+</main>
+<footer><div class="wrap footer-row"><div><strong>MAHAJAN RESTAURANT</strong><p>Good food. Great vibes. Together.</p></div><p>© <span id="year"></span> Mahajan Restaurant. All rights reserved.</p><a class="top-link" href="#home">Back to top ↑</a></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const toggle=document.getElementById('menuToggle'), links=document.getElementById('navLinks');
+toggle.addEventListener('click',()=>{const open=links.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'✕':'☰'});
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+const dateInput=document.getElementById('bookingDate');dateInput.min=new Date().toISOString().split('T')[0];
+// Add the restaurant's WhatsApp number below using country code, digits only (example: 919876543210).
+const RESTAURANT_WHATSAPP = 'ADD_WHATSAPP_NUMBER';
+document.getElementById('bookingForm').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);const message=`Mahajan Restaurant reservation request\nName: ${f.get('name')}\nPhone: ${f.get('phone')}\nDate: ${f.get('date')}\nTime: ${f.get('time')}\nGuests: ${f.get('guests')}\nOccasion: ${f.get('occasion')}\nSpecial request: ${f.get('message')||'None'}`;if(RESTAURANT_WHATSAPP==='ADD_WHATSAPP_NUMBER'){const toast=document.getElementById('toast');toast.textContent='Website ready hai. WhatsApp booking activate karne ke liye HTML mein RESTAURANT_WHATSAPP ke andar restaurant ka number add karein.';toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),7000);return;}window.open(`https://wa.me/${RESTAURANT_WHATSAPP}?text=${encodeURIComponent(message)}`,'_blank','noopener');});
+</script>
+</body>
+</html>
